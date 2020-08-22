@@ -41,12 +41,12 @@ function setup() {
   
   trex.addImage("collided", trex_collided);
   
-  ground = createSprite(200,180,400,20);
+  ground = createSprite(300,180,600,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   ground.velocityX = -(6+3*score/100);
   
-  invisibleGround = createSprite(200,190,400,10);
+  invisibleGround = createSprite(300,190,600,10);
   invisibleGround.visible = false;
   
   cloudsGroup = new Group();
