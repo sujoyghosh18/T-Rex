@@ -164,3 +164,19 @@ function spawnObstacles() {
     obstaclesGroup.add(obstacle);
     }
 }
+
+function reset(){
+gameState = PLAY;
+gameover.visible = false;
+restart.visible = false;
+obstacleGroup.destroyEach();
+cloudsGroup.destroyEach();
+trex.changeAnimation("runnning",trex_running);
+score = 0;
+}
+
+
+
+
+
+
